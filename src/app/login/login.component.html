@@ -1,0 +1,36 @@
+<div class="bg" >
+    <div class="row">
+            <div class="col s12" >
+                <div class="card">
+                    <div class="card-content  white-text">
+                        <h4 align="center">Login </h4><span></span>
+                        <form #loginForm='ngForm' (ngSubmit)="onLogin(loginForm)">
+                            <input type="hidden" name="_id"  >
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input type="text" name="username" ngModel  required>
+                                    <label for="username">Username</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input type="email" name="email"  ngModel required>
+                                    <label for="email">Email</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input type="password" name="password" ngModel required>  
+                                    <label for="password">Password</label>   
+                                                          
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <button class = "btn btn-custom waves-effect waves-light green"  type="submit" > Login </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
